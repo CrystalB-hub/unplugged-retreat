@@ -119,6 +119,8 @@ header nav ul {
   justify-content: space-around;
 }
 
+/*footer styles*/
+
 footer .social-icons {
   display: flex;
   justify-content: space-around;
@@ -138,7 +140,6 @@ footer .social p {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-
 }
 
 /*aside*/
@@ -162,7 +163,7 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row rap;
+  flex-flow: row wrap;
 }
 
 /*reviews*/
@@ -170,7 +171,7 @@ aside {
 .reviews {
   display: flex;
   justify-content: center;
-  flex-flow: row rap;
+  flex-flow: row wrap;
 }
 
 /* ==========================================================================
@@ -181,14 +182,14 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row rap;
+  flex-flow: row wrap;
   }
 
   .contact-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row rap;
+    flex-flow: row wrap;
   }
 
   /* ==========================================================================
@@ -199,14 +200,14 @@ aside {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row rap;
+    flex-flow: row wrap;
 }
 
   .faq .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row rap;
+    flex-flow: row wrap;
 }
 
 
