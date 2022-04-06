@@ -99,10 +99,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row rap;
-
 }
-
-/*Header styles*/
 
 header {
   padding: 15px 0px;
@@ -135,9 +132,6 @@ header nav ul {
   height: 1px;
   margin: 10px 0 20px 0;
 }
-
-/*footer styles*/
-
 
 footer {
   flex-direction: column;
@@ -188,7 +182,7 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row rap;
+  flex-flow: row wrap;
 }
 
 /*features*/
@@ -413,7 +407,6 @@ features p {
   /*Hero area*/
   
   /*Aside*/
-
   aside .content-wrapper {
     display: flex;
     justify-content: space-between;
@@ -436,7 +429,7 @@ features p {
   }
   
   .features .features-item-description {
-    width: 50%;
+    width: 62%;
   }
 
    /*Reviews*/
@@ -446,7 +439,7 @@ features p {
   }
 
   .reviews article div {
-    width:50%;
+    width: 50%;
   }
 
   /*Footer*/
@@ -459,7 +452,6 @@ features p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
   }
 
   footer .contact {
@@ -467,8 +459,6 @@ features p {
   }
 
   footer .copyright {
-    display: flex;
-    justify-content: center;
     width: 100%;
   }
 
@@ -481,7 +471,7 @@ features p {
   }
 
   .mission-content p {
-    width: 49%;
+    width: 45%;
   }
   
   .contact-section .content-wrapper h2 {
@@ -495,12 +485,16 @@ features p {
   }
 
   /*----------------------FAQ styles----------------------------*/
+  header {
+    padding: 15px 0;
+  }
+
   .faq .content-wrapper {
     justify-content: space-between;
   }
 
   .faq-content {
-    flex-basis: 40%;
+    flex-basis: 45%;
   }
 
   .faq h2 {
@@ -512,9 +506,50 @@ features p {
 
   /*----------------------Homepage styles----------------------------*/
 
+   /*General Styles*/
+   .content-wrapper {
+    max-width: 960px;
+  }
+  
+  /* Hero */
+  .hero-area h1 {
+    width: 60%;
+  }
+
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description, 
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /* Features */
+  .features article {
+    flex-basis: 33%;
+  }
+  
+  .features h2 {
+    width: 90%;
+  }
+
+  /* Reviews */
+  .reviews article div {
+    width: 42%;
+  }
+
   /*----------------------About styles----------------------------*/
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
 
   /*----------------------FAQ styles----------------------------*/
+  .faq h2 {
+    width: 100%;
+  }
 
 }
 
