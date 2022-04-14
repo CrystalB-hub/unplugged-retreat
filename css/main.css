@@ -94,13 +94,17 @@ textarea {
    }
 
    body {
+    color: #e2e3ed;
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     text-align: left;
+    /**************Placeholder background color. REMOVE after images***********/
+    background-color: darkgrey;
    }
 
   ul, ol {
     list-style-type: none;
+    font-size: 1.125em;
   } 
 
   a {
@@ -111,12 +115,14 @@ textarea {
   h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.875em;
+    font-weight: 500;
   }
 
   h3, h4 {
     font-family: 'Poppins', sans-serif;
     margin: 20px 0px;
     font-size: 1.125em;
+    font-weight: 500;
   }
 
   p {
@@ -124,21 +130,10 @@ textarea {
     line-height: 1.285;
   }
 
-  img {
-
-  }
-
-  figure {
-
-  }
-
   address {
     font-style: normal;
   }
 
-  .content-wrapper {
-
-  }
    .content-wrapper {
      width: 90%;
      margin: 50px 0;
@@ -151,6 +146,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row rap;
+  background-color: #202322;
 }
 
 header {
@@ -177,9 +173,12 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .header-divider {
+  background: #3a3a3a;
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
@@ -187,6 +186,7 @@ header nav ul {
 
 footer {
   flex-direction: column;
+  text-align: center;
 }
 
 footer .content-wrapper {
@@ -228,13 +228,47 @@ footer .copyright {
   flex-flow: row wrap;
 }
 
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
 /*aside*/
 
 aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /*features*/
@@ -248,16 +282,16 @@ aside {
 .features .features-items {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 }
 
-features h2 {
+.features h2 {
   margin-bottom: 60px;
 }
 
-features p {
+.features p {
   margin: 0;
+  text-align: center;
 }
 
 .features article {
@@ -268,6 +302,7 @@ features p {
 /*reviews*/
 
 .reviews {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -275,6 +310,7 @@ features p {
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3 {
@@ -287,6 +323,7 @@ features p {
    ========================================================================== */
    
   .mission {
+    background-color: #527158;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -294,6 +331,7 @@ features p {
   }
 
   .contact-section {
+    background-color: #2a423a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -309,6 +347,7 @@ features p {
    ========================================================================== */
 
   .faq {
+    background-color: #527158;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -325,6 +364,7 @@ features p {
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .faq-content {
@@ -424,12 +464,23 @@ features p {
 @media only screen and (min-width: 768px) {
   /*Tablet styles here*/
 
+
   /*----------------------Homepage styles----------------------------*/
   
   /*General Styles*/
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
   }
 
   /*Header*/
@@ -448,7 +499,6 @@ features p {
   }
 
   header nav ul {
-    list-style: none;
     justify-content: space-between;
   }
 
@@ -457,6 +507,11 @@ features p {
   }
 
   /*Hero area*/
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
   
   /*Aside*/
   aside .content-wrapper {
@@ -490,8 +545,16 @@ features p {
     justify-content: space-between;
   }
 
+  .reviews h2 {
+    width: 85%;
+  }
+
   .reviews article div {
-    width: 50%;
+    width: 49%;
+  }
+
+  .reviews h3 {
+    width: 49%;
   }
 
   /*Footer*/
@@ -500,10 +563,20 @@ features p {
     margin: 100px 0;
   }
 
-  .footer-content {
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+    line-height: 1.71;
   }
 
   footer .contact {
@@ -536,6 +609,10 @@ features p {
     align-items: flex-start;
   }
 
+  .contact-content h4 {
+    font-size: 1.5em;
+  }
+
   /*----------------------FAQ styles----------------------------*/
   header {
     padding: 15px 0;
@@ -553,6 +630,11 @@ features p {
     width: 100%;
   }
 
+  .faq h4, p {
+    font-size: .875em;
+    line-height: 1.125;
+  }
+
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
 
@@ -562,9 +644,28 @@ features p {
    .content-wrapper {
     max-width: 960px;
   }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3, h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
+
+  }
+  /*Header*/
+  header ul, li {
+    font-size: 1.125em;
+  }
   
   /* Hero */
   .hero-area h1 {
+    font-size: 3.75em;
     width: 60%;
   }
 
@@ -588,19 +689,39 @@ features p {
   }
 
   /* Reviews */
+  .reviews h2 {
+    padding-bottom: 50px;
+  }
+
   .reviews article div {
     width: 42%;
+  }
+
+  /*Footer*/
+  footer h4 {
+    font-size: 1.875em;
   }
 
   /*----------------------About styles----------------------------*/
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
+    font-size: 3em;
+  }
+
+  .contact-content h4 {
+    font-size: 1.875em;
   }
 
   /*----------------------FAQ styles----------------------------*/
   .faq h2 {
     width: 100%;
+    font-size: 3em;
+  }
+
+  .faq h4, p {
+    font-size: 1.125em;
+    line-height: 1;
   }
 
 }
@@ -680,3 +801,4 @@ features p {
   }
 }
 }
+
