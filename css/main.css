@@ -138,6 +138,14 @@ textarea {
      width: 90%;
      margin: 50px 0;
    }
+  
+   img {
+     width: 100%;
+   }
+
+   figure {
+     margin: 0;
+   }
 
 /*------------------------Base Header-Footer styles-------------------------*/
 header,
@@ -159,6 +167,14 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header nav {
@@ -219,10 +235,12 @@ footer .copyright {
 }
 
 /*------------------------Mobile styles - homepage-------------------------*/
-
 /*hero area*/
 
 .hero-area {
+  background: url('../img/woman-bridge.jpg') center no-repeat #333;
+  background-size: cover;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -274,6 +292,8 @@ input[type=button] {
 /*features*/
 
 .features {
+  background: url('../img/background.png') center no-repeat #333;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -502,6 +522,10 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  header figure {
+    width: 30%;
+  }
+
   .header-divider {
     display: none;
   }
@@ -554,6 +578,12 @@ input[type=button] {
   }
 
   .reviews h3 {
+    width: 75%;
+    margin: 0;
+  }
+
+  .reviews article figure,
+  .reviews article div {
     width: 49%;
   }
 
@@ -662,7 +692,7 @@ input[type=button] {
   header ul, li {
     font-size: 1.125em;
   }
-  
+
   /* Hero */
   .hero-area h1 {
     font-size: 3.75em;
@@ -696,7 +726,7 @@ input[type=button] {
   .reviews article div {
     width: 42%;
   }
-
+  
   /*Footer*/
   footer h4 {
     font-size: 1.875em;
