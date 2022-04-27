@@ -704,11 +704,12 @@ input[type=button] {
   /*----------------------FAQ styles----------------------------*/
   .faq .content-wrapper {
     justify-content: space-between;
+    margin: 100px 0 70px 0;
   }
 
   .faq-content {
     flex-basis: 45%;
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
 
   .faq h2 {
