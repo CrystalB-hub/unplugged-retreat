@@ -155,7 +155,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row rap;
+  flex-flow: row wrap;
   background-color: #202322;
 }
 
@@ -429,6 +429,11 @@ input[type=button] {
 
 .faq-content h4 {
   line-height: 1.3333;
+  margin: 0 0 10px 0;
+}
+
+.faq p {
+  margin: 0;
 }
 
 
@@ -634,7 +639,7 @@ input[type=button] {
   /*Footer*/
   footer .content-wrapper {
     width: 65%;
-    margin: 100px 0;
+    margin: 75px 0 100px 0;
   }
 
   footer .footer-content {
@@ -703,6 +708,7 @@ input[type=button] {
 
   .faq-content {
     flex-basis: 45%;
+    margin-bottom: 0;
   }
 
   .faq h2 {
